@@ -9,6 +9,7 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
+    // TODO: remove when Login logic is set up
     path: 'home',
     component: HomepageComponent
   },
