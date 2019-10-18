@@ -2,16 +2,17 @@
 <div class="menu">
     <img class="menu-image" src="../../../assets/minecraft-logo.png" alt="Minecraft logo">
     <div class="menu-buttons">
-        <div class="button">
+        <div class="button" (click)="goToPage('home')">
             <span>Home</span>
         </div><hr>
-        <div class="button">
+        <div class="button" (click)="goToPage('player')">
             <span>Players</span>
         </div><hr>
-        <div class="button">
+        <div class="button" (click)="goToPage('server')">
             <span>Server</span>
         </div><hr>
-        <div class="button">
+        <!-- TODO: Change route once route exists -->
+        <div class="button" (click)="goToPage('home')">
             <span>Query</span>
         </div>
         <!-- <button class="btn btn-block">Home</button><hr>
