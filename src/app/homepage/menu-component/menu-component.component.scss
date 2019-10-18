@@ -1,13 +1,17 @@
 div.menu {
     height: 100vh;
     width: 340px;
-    background-color: #00385F;
+	background-image: url('../../../assets/menu-background.jpg');
+	margin-left: -16px;
+	margin-top: -8px;
 }
+
 img {
     padding-top: 50px;
     padding-bottom: 50px;
     width: 340px;
 }
+
 div.menu-buttons {
     height: 454px;
     display: flex;
@@ -15,31 +19,55 @@ div.menu-buttons {
     justify-content: space-evenly;
     align-items: center;
 }
-button {
-	box-shadow:inset 0px 0px 15px 3px #23395e;
-	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
-	background-color:#2e466e;
-	border-radius:17px;
-	border:1px solid #1f2f47;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	padding:6px 13px;
-	text-decoration:none;
-    text-shadow:0px 1px 0px #263666;
-    width: 50%;
-}
-button:hover {
-	background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
-	background-color:#415989;
-}
-button:active {
-	position:relative;
-	top:1px;
-}
+
+@font-face {
+	font-family: 'Minecraft';
+	src: url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.eot');
+	src: url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.eot?#iefix') format('embedded-opentype'),
+		 url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.woff') format('woff'),
+		 url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.ttf')  format('truetype'),
+		 url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.svg#svgFontName') format('svg');
+  }
+  
+  .button {
+	height: 40px;
+	width: 200px;
+	outline: 2px solid black;
+	position: relative;
+	margin: 0;
+	display: inline-block;
+	background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_center.png');
+	background-repeat: repeat;
+	padding: 0;
+	font-family: 'MinecraftiaRegular';
+    font-weight: normal;
+    font-style: normal;
+	text-align: center;
+	color: white;
+	text-shadow: 3px 3px #4C4C4C;
+	border-bottom: 4px solid #565656;
+	border-right: 2px solid #565656;
+	border-left: 2px solid #AAA;
+	border-top: 2px solid #AAA;
+	box-sizing: border-box;
+	font-size: 16px;
+  }
+  
+  .button span {
+	position: relative;
+	line-height: 40px;
+	bottom: 3px;
+  }
+  
+  .button:hover {
+	border-bottom: 4px solid #59639A;
+	border-right: 2px solid #59639A;
+	border-left: 2px solid #BDC6FF;
+	border-top: 2px solid #BDC6FF;
+	background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_active_center.png');
+	color: #FFFFA0;
+  }
+
 hr {
-    color: whitesmoke;
     width: 90%;
 }
