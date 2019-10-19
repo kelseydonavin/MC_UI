@@ -10,6 +10,6 @@ import { MenuComponentComponent } from './menu-component/menu-component.componen
   imports: [
     CommonModule
   ],
-  exports: [HomepageComponent]
+  exports: [HomepageComponent, MenuComponentComponent]
 })
 export class HomepageModule { }
