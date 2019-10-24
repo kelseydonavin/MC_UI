@@ -1,0 +1,73 @@
+div.menu {
+    height: 100vh;
+    width: 340px;
+	background-image: url('../../../assets/menu-background.jpg');
+	margin-left: -16px;
+	margin-top: -8px;
+}
+
+img {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 340px;
+}
+
+div.menu-buttons {
+    height: 454px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@font-face {
+	font-family: 'Minecraft';
+	src: url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.eot');
+	src: url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.eot?#iefix') format('embedded-opentype'),
+		 url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.woff') format('woff'),
+		 url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.ttf')  format('truetype'),
+		 url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.svg#svgFontName') format('svg');
+  }
+  
+  .button {
+	height: 40px;
+	width: 200px;
+	outline: 2px solid black;
+	position: relative;
+	margin: 0;
+	display: inline-block;
+	background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_center.png');
+	background-repeat: repeat;
+	padding: 0;
+	font-family: 'MinecraftiaRegular';
+    font-weight: normal;
+    font-style: normal;
+	text-align: center;
+	color: white;
+	text-shadow: 3px 3px #4C4C4C;
+	border-bottom: 4px solid #565656;
+	border-right: 2px solid #565656;
+	border-left: 2px solid #AAA;
+	border-top: 2px solid #AAA;
+	box-sizing: border-box;
+	font-size: 16px;
+  }
+  
+  .button span {
+	position: relative;
+	line-height: 40px;
+	bottom: 3px;
+  }
+  
+  .button:hover {
+	border-bottom: 4px solid #59639A;
+	border-right: 2px solid #59639A;
+	border-left: 2px solid #BDC6FF;
+	border-top: 2px solid #BDC6FF;
+	background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_active_center.png');
+	color: #FFFFA0;
+  }
+
+hr {
+    width: 90%;
+}
