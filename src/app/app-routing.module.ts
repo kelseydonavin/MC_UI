@@ -4,6 +4,8 @@ import { LoginComponent } from './login/login.component';
 import { HomepageComponent } from './homepage/homepage.component'
 import { PlayerPageComponent } from './player-page/player-page.component';
 import { ServerPageComponent } from './server-page/server-page.component';
+import { MetricsPageComponent } from './metrics-page/metrics-page.component';
+import { CreateLoginPageComponent } from './create-login-page/create-login-page.component';
 
 const routes: Routes = [
   {
@@ -14,6 +16,16 @@ const routes: Routes = [
     // TODO: remove when Login logic is set up
     path: 'home',
     component: HomepageComponent
+  },
+  {
+    // TODO: remove when menu logic is set up
+    path: 'metrics',
+    component: MetricsPageComponent
+  },
+  {
+    // TODO: remove when menu logic is set up
+    path: 'create',
+    component: CreateLoginPageComponent
   },
   {
     // TODO: remove when menu logic is set up
