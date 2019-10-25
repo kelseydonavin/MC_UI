@@ -1,27 +1,27 @@
-# AIMS
+# MC
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
+This is the senior design project for the Computer Science CAPSTONE class at Washington State University. Code contirbutions by Kelsey Donavin, Trenton Fales, Lucas Shearer, Jwahoon Kim, and Jae Min Kim. The project sponor and advisor for this project is Dr. Arron Crandall. All questions may be referred to the Porject Lead, Kelsey Donavin at kelsey.donavin@wsu.edu. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
 
-## Development server
+## Common Errors and Solutions 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+`Error: ENOENT:: no such file or directory, open '../node_modules/jquery/dist/jquery.min.js`
+    You do not have jquery installe din your node_modules folder. Run the following command to resolve this error: npm install boostrap jquery --save
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Useful Commands
 
-## Build
+ng s            compiles and runs the current local code on the dev server -- navigate to `http://localhost:4200/`
+ng build        build the project -- build artifacts will be stored in the `dist/` directory (use `--prod` flag for a production build)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+ng test         execute unit tests via Karma](https://karma-runner.github.io)
+ng e2e          execute the end-to-end tests via [Protractor](http://www.protractortest.org/)
 
-## Running unit tests
+ng help         get command list and help with Angular CLI [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ng generate component component-name        generate a new component -- can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Boostrap Design Links
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Typography      https://getbootstrap.com/2.3.2/base-css.html
+Components      https://getbootstrap.com/2.3.2/components.html
