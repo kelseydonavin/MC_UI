@@ -8,6 +8,9 @@ import { LoginModule } from './login/login.module';
 import { HomepageModule } from './homepage/homepage.module';
 import { PlayerPageModule } from './player-page/player-page.module';
 import { ServerPageModule } from './server-page/server-page.module';
+import { MetricsPageModule } from './metrics-page/metrics-page.module';
+import { CreateLoginPageModule } from './create-login-page/create-login-page.module';
+import { CreatePageModule } from './create-login-page/create-page/create-page.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { ServerPageModule } from './server-page/server-page.module';
     LoginModule,
     HomepageModule,
     ServerPageModule,
-    PlayerPageModule
+    PlayerPageModule,
+    MetricsPageModule,
+    CreateLoginPageModule,
+    CreatePageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
