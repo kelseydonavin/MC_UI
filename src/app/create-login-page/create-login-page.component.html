@@ -1,1 +1,34 @@
-<app-menu-component></app-menu-component>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div>
+    <app-menu-component></app-menu-component>
+</div>
+
+<body>
+    <div id="login">
+        <h1 class="text-center text-white pt-5"></h1>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="" (submit)="loginUser($event)">
+                            <h3 class="text-center" style="color:rgb(255, 255, 255)">Create Tournament Login</h3>
+                            <div class="form-group">
+                                <label for="password" style="color:rgb(255, 255, 255)"></label><br>
+                                <input id="userinput" type="password" placeholder="Password" name="password" id="user-password" class="form-control">
+                            </div>
+                            <div class="form-group2">
+                                <input type="submit" name="submit" class="btn btn-info btn-md" value="submit" onclick="passwordCheck()">
+                            </div>
+                       
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
