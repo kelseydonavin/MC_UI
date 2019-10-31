@@ -1,0 +1,58 @@
+.server-page, body {
+    //background: url(images/background.jpg) no-repeat center center fixed;
+    //margin-left: 50px;
+    //padding: 0;
+    //height: 500px;
+    //width: 1000px;
+    //background: #76899e;
+    //font-family: fantasy;
+    margin: 0;
+    padding: 0;
+    //background-color: #17a2b8;
+    background: url(images/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.list {
+    position: absolute;
+    
+    margin-left: 685px;
+    padding: 0; 
+    height: 700px;
+    width: 500px;
+    //background-color: #b5ddec;
+    background-color: rgba(168, 225, 233, 0.3);
+} 
+
+div.server-settings {
+    padding-top:15px;
+    padding-left:15px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(168, 225, 233, 0.4);
+}
+
+.tab {
+    position:absolute;left:300px; 
+}
+
+
+div.title {
+    padding-top: 20px;
+    height: 150px;
+}
+
+div.text-box {
+    position: absolute;
+    margin-top:-5px;
+    height: 30px;
+    width: 100px;
+    background-color: rgb(182, 221, 231);
+}
