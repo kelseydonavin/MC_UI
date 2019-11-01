@@ -1,0 +1,29 @@
+div.metrics {
+    margin: 0;
+    padding: 0;
+    background: url(../../assets/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: calc(100vh - 72px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.metric-table {
+    padding-top: 15px;
+    width: 30%;
+    margin: auto;
+    display: inline-table;
+}
+
+thead {
+    text-align: center;
+}
+
+table {
+    line-height: 80%;
+}
