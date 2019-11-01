@@ -6,7 +6,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
+    height: calc(100vh - 72px);
   }
   #login .container #login-row #login-column #login-box {
     margin-top: 60px;
