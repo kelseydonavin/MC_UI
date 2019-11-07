@@ -1,7 +1,27 @@
+
 <div>
     <app-menu-component></app-menu-component>
 </div>
+
+
+
+<div class="container-metrics">
+<div class="metricWrapper">
+    <button class="dashboardButton">
+        <a href ="http://localhost:4200/metrics">Dashboard</a>
+    </button>
+
+    <div class="searchWrapper">
+        <div class="metricButton" (click)="toggleButton()">
+            metrics
+        </div>
+        <ul class="metricDropdown" *ngIf="toggleMetrics">
+            <input type="text" class="form-control" placeholder="Player" aria-label="Username" aria-describedby="basic-addon1">
+        </ul>
+    </div>
+</div>
 <div class="metrics">
+
     <div class="metric-table">
         <table class="table table-striped table-dark">
             <thead>
@@ -218,4 +238,5 @@
             </tbody>
         </table>
     </div>
+</div>
 </div>

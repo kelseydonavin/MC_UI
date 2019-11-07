@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -10,18 +11,22 @@ export class CreateLoginPageComponent implements OnInit {
 
   //constructor() { }
   constructor(private router: Router) { }
+  error="password";
+  password="";
 
   ngOnInit() {
   }
-  loginUser(event)
+  loginUser()//event
   {
-    var password = event.target.elements[0].value;
-    if(password == 'hurl')
+    //var password = event.target.elements[0].value;
+    if(this.password == 'hurl')
     {
       this.router.navigate(['create']);
     }
     else{
-      this.router.navigate(['create-login']);
+      this.error="Incorrect Password";
+      this.password="";
+      return;
     }
   }
     goToPage(pageName: string) {

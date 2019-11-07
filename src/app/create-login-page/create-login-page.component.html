@@ -12,19 +12,20 @@
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
-                    <div id="login-box" class="col-md-12">
-                        <form id="login-form" class="form" action="" (submit)="loginUser($event)">
+                    <div id="login-box" class="col-md-12 bg-dark">
+                        <div id="login-form" class="form">
                             <h3 class="text-center" style="color:rgb(255, 255, 255)">Create Tournament Login</h3>
                             <div class="form-group">
                                 <label for="password" style="color:rgb(255, 255, 255)"></label><br>
-                                <input id="userinput" type="password" placeholder="Password" name="password"
-                                    id="user-password" class="form-control">
+                                <input [(ngModel)]="password" type="password" placeholder="{{error}}" name="password"
+                                     class="form-control">
                             </div>
                             <div class="form-group2">
-                                <button class="btn btn-outline-success my-2 my-sm-0" onclick="passwordCheck()"
-                                    type="submit">Submit</button>
+                                <button class="btn btn-outline-success my-2 my-sm-0" (click)="loginUser()">
+                                    Submit
+                                </button>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>

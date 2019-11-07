@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./metrics-page.component.scss']
 })
 export class MetricsPageComponent implements OnInit {
+toggleMetrics=false;
+
 
   constructor() { }
-
+    toggleButton(){
+      this.toggleMetrics=!this.toggleMetrics;
+    }
   ngOnInit() {
   }
 
