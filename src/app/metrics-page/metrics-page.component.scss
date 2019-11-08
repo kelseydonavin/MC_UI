@@ -6,7 +6,7 @@ div.metrics {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: calc(100vh - 72px);
+    height: calc(100vh - 82px);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -26,4 +26,10 @@ thead {
 
 table {
     line-height: 80%;
+}
+
+.metrics-menu {
+    width: 100%;
+    height: 38px;
+    padding: 22px;
 }
