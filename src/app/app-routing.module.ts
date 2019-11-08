@@ -8,24 +8,23 @@ import { CreateLoginPageComponent } from './create-login-page/create-login-page.
 import { CreatePageComponent} from './create-login-page/create-page/create-page.component';
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
-class UserToken {}
-class Permissions {
-  canGoToRoute(user: UserToken, id: string): boolean {
-    return true;
-  }
-}
+
 
 @Injectable()
-class AuthGuard implements CanActivate {
-  constructor(private permissions: Permissions, private currentUser: UserToken) {}
+export class DirectAccessGuard implements CanActivate {
+  constructor(private router: Router) {}
 
   canActivate(
-    route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot
-  ): Observable<boolean>|Promise<boolean>|boolean {
-    return this.permissions.canGoToRoute(this.currentUser, route.params.id);
+    next: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
+    // If the previous URL was blank, then the user is directly accessing this page
+    if (this.router.url == '/') {
+      this.router.navigate(['']); // Navigate away to some other page
+      return false;
+    }
+    return true;
   }
 }
 
@@ -49,7 +48,7 @@ const routes: Routes = [
   {
     // TODO: remove when menu logic is set up
     path: 'create',
-    canActivate: [AuthGuard],
+    //canActivate: [DirectAccessGuard],
     component: CreatePageComponent
   },
   {
