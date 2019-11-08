@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
-import { HomepageComponent } from './homepage/homepage.component'
+import { HomepageComponent } from './homepage/homepage.component';
 import { PlayerPageComponent } from './player-page/player-page.component';
 import { ServerPageComponent } from './server-page/server-page.component';
 import { MetricsPageComponent } from './metrics-page/metrics-page.component';
@@ -48,7 +48,7 @@ const routes: Routes = [
     path: '',
     pathMatch: 'full',
     component: LoginComponent
-  }, 
+  },
   {
     path: '**',
     component: LoginComponent
