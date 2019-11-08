@@ -7,25 +7,21 @@ import { Router } from '@angular/router';
   styleUrls: ['./create-login-page.component.scss']
 })
 export class CreateLoginPageComponent implements OnInit {
-
-  //constructor() { }
   constructor(private router: Router) { }
 
   ngOnInit() {
   }
-  loginUser(event)
-  {
-    var password = event.target.elements[0].value;
-    if(password == 'hurl')
-    {
+
+  loginUser(event) {
+    const password = event.target.elements[0].value;
+    if (password === 'hurl') {
       this.router.navigate(['create']);
-    }
-    else{
+    } else {
       this.router.navigate(['create-login']);
     }
   }
-    goToPage(pageName: string) {
-      this.router.navigate([`${pageName}`]);
-    }
 
+  goToPage(pageName: string) {
+    this.router.navigate([`${pageName}`]);
+  }
 }
