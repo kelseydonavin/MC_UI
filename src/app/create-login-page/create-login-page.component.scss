@@ -1,28 +1,24 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: url(../../assets/background.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: calc(100vh - 72px);
-  }
-  #login .container #login-row #login-column #login-box {
-    margin-top: 60px;
-    max-width: 600px;
-    height: 200px;
-    
-    background-color: rgb(59, 59, 59);
-   
-  }
-  #login .container #login-row #login-column #login-box #login-form {
-    padding: 20px;
-    
-  }
-  #login .container #login-row #login-column #login-box #login-form #form-group2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
+  margin: 0;
+  padding: 0;
+  background: url(../../assets/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: calc(100vh - 72px);
+}
+#login .container #login-row #login-column #login-box {
+  margin-top: 60px;
+  max-width: 600px;
+  height: 200px;
+  background-color: rgb(59, 59, 59);
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #form-group2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
