@@ -12,6 +12,10 @@ import { MetricsPageModule } from './metrics-page/metrics-page.module';
 import { CreateLoginPageModule } from './create-login-page/create-login-page.module';
 import { CreatePageModule } from './create-login-page/create-page/create-page.module';
 
+import { HttpClientModule } from '@angular/common/http';  // This is so we can use get, post, put, delete etc...
+import { RestService } from './API/rest.service'    // import RestService
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -25,9 +29,11 @@ import { CreatePageModule } from './create-login-page/create-page/create-page.mo
     PlayerPageModule,
     MetricsPageModule,
     CreateLoginPageModule,
-    CreatePageModule
+    CreatePageModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [RestService], // Provides service, ie http client stuff. 
+                            // This is so it doesnt treat it like a component, rather a service.
   bootstrap: [AppComponent]
 })
 export class AppModule { }
