@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-create-page',
@@ -6,10 +7,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-page.component.scss']
 })
 export class CreatePageComponent implements OnInit {
+  tournamentForm = this.fb.group({
+    tournamentName: [''],
+    blocksMined: [''],
+    mobsKilled: [''],
+    playersKilled: [''],
+    trades: [''],
+    tripsToNether: [''],
+    animalsBred: [''],
+    enterNether: [''],
+    locateEnd: [''],
+    defeatEnderDragon: ['']
+  });
 
-  constructor() { }
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
+  }
+
+  submit() {
+    const data = JSON.stringify(this.tournamentForm.value);
+    console.log(data);
   }
 
 }
