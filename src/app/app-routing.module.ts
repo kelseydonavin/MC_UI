@@ -8,7 +8,14 @@ import { MetricsPageComponent } from './metrics-page/metrics-page.component';
 import { CreateLoginPageComponent } from './create-login-page/create-login-page.component';
 import { CreatePageComponent} from './create-login-page/create-page/create-page.component';
 
+import { ExampleUsersComponent } from './example-users/example-users.component';
+
+
 const routes: Routes = [
+    {
+      path: 'example-users',
+      component: ExampleUsersComponent
+    },
   {
     path: 'login',
     component: LoginComponent
