@@ -11,6 +11,8 @@ import { ServerPageModule } from './server-page/server-page.module';
 import { MetricsPageModule } from './metrics-page/metrics-page.module';
 import { CreateLoginPageModule } from './create-login-page/create-login-page.module';
 import { CreatePageModule } from './create-login-page/create-page/create-page.module';
+import { GraphQLModule } from './graphql.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { CreatePageModule } from './create-login-page/create-page/create-page.mo
     PlayerPageModule,
     MetricsPageModule,
     CreateLoginPageModule,
-    CreatePageModule
+    CreatePageModule,
+    GraphQLModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
