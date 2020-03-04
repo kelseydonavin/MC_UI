@@ -1,15 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomepageComponent } from '../homepage/homepage.component';
-import { MenuComponentComponent } from './menu-component/menu-component.component';
-
-
 
 @NgModule({
-  declarations: [HomepageComponent, MenuComponentComponent],
+  declarations: [HomepageComponent],
   imports: [
     CommonModule
   ],
-  exports: [HomepageComponent, MenuComponentComponent]
+  exports: [HomepageComponent]
 })
 export class HomepageModule { }
