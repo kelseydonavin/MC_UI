@@ -8,16 +8,16 @@ import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 })
 export class CreatePageComponent implements OnInit {
   tournamentForm = this.fb.group({
-    tournamentName: [''],
-    blocksMined: [''],
-    mobsKilled: [''],
-    playersKilled: [''],
-    trades: [''],
-    tripsToNether: [''],
-    animalsBred: [''],
-    enterNether: [''],
-    locateEnd: [''],
-    defeatEnderDragon: ['']
+    tournamentName: [],
+    blocksMined: [],
+    mobsKilled: [],
+    playersKilled: [],
+    trades: [],
+    tripsToNether: [],
+    animalsBred: [],
+    enterNether: [false],
+    locateEnd: [false],
+    defeatEnderDragon: [false]
   });
 
   constructor(private fb: FormBuilder) { }
