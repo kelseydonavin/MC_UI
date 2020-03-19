@@ -8,28 +8,14 @@
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Username</th>
-                    <th scope="col">Last Seen</th>
-                    <th scope="col">Total Time</th>
+                    <th scope="col">Last Log-in</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody *ngFor="let Player of players; let i = index"> <!--Not alternating colors correctly. Need to compare dates/times to only show last login?-->
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>10/24/2019 9:58 PM</td>
-                    <td>1 hr 5 min</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>10/24/2019 5:36 PM</td>
-                    <td>2 hrs 10 min</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>10/24/2019 7:13 PM</td>
-                    <td>58 min</td>
+                        <th scope="row">{{i+1}}</th>
+                         <td>{{Player.PlayerName}}</td>
+                         <td>{{Player.Time}}</td>
                 </tr>
             </tbody>
         </table>
