@@ -4,12 +4,19 @@ import gql from 'graphql-tag';
 
 const USERS_QUERY = gql`
   query {
-    users {
-      fullName,
-      email,
-      location,
-      age,
-      citizen,
+    players {
+        PlayerName,
+        Time,
+        LoggedIn,
+        PlayerKilled,
+        Advancement,
+        BlockType,
+        BlocksMined,
+        MobsKilled,
+        PlayersKilled,
+        Trades,
+        TripsToNether,
+        AnimalsBred,
     }
   }
 `;
@@ -21,7 +28,7 @@ const USERS_QUERY = gql`
 })
 export class ExampleUsersComponent implements OnInit {
 
-  users: any[] = []; //If done correctly this will hold database info
+  players: any[] = []; //If done correctly this will hold database info
 
   private query: QueryRef<any>;
 
@@ -34,7 +41,7 @@ export class ExampleUsersComponent implements OnInit {
     });
 
     this.query.valueChanges.subscribe(result => {
-      this.users = result.data && result.data.users;
+      this.players = result.data && result.data.players;
     });
   }
 
