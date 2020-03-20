@@ -7,11 +7,9 @@ import { AppComponent } from './app.component';
 import { CreatePageComponent } from './create-login-page/create-page/create-page.component';
 import { CreateLoginPageComponent } from './create-login-page/create-login-page.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import { MenuComponentComponent } from './homepage/menu-component/menu-component.component';
 import { PlayerPageComponent } from './player-page/player-page.component';
 import { ServerPageComponent } from './server-page/server-page.component';
 import { MetricsPageComponent } from './metrics-page/metrics-page.component';
-import { LoginComponent } from './login/login.component';
 
 import { HomepageModule } from './homepage/homepage.module';
 import { PlayerPageModule } from './player-page/player-page.module';
@@ -24,11 +22,9 @@ import { MetricsPageModule } from './metrics-page/metrics-page.module';
     CreatePageComponent,
     CreateLoginPageComponent,
     HomepageComponent,
-    MenuComponentComponent,
     PlayerPageComponent,
     ServerPageComponent,
-    MetricsPageComponent,
-    LoginComponent
+    MetricsPageComponent
   ],
   imports: [
     BrowserModule,
