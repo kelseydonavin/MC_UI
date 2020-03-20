@@ -2,11 +2,11 @@
 <div class="create">
     <div class="header">Create Tournament</div>
     <div class="container bg-dark">
-        <form>
+        <form [formGroup]="tournamentForm" (ngSubmit)="submit()">
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Tournament Name</label>
                 <div class="col-sm-10">
-                    <input class="form-control" id="inputName" placeholder="Name">
+                    <input class="form-control" id="inputName" placeholder="Name" formControlName="tournamentName">
                 </div>
             </div>
             <div class="form-group row">
@@ -18,8 +18,8 @@
                                 <input type="checkbox" aria-label="Checkbox for following text input">
                             </div>
                         </div>
-                        <input type="text" class="form-control" placeholder="Blocks Mined"
-                            aria-label="Text input with checkbox">
+                        <input type="text" class="form-control" placeholder="# Blocks Mined"
+                            aria-label="Text input with checkbox" formControlName="blocksMined">
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -27,8 +27,8 @@
                                 <input type="checkbox" aria-label="Checkbox for following text input">
                             </div>
                         </div>
-                        <input type="text" class="form-control" placeholder="Mobs Killed"
-                            aria-label="Text input with checkbox">
+                        <input type="text" class="form-control" placeholder="# Mobs Killed"
+                            aria-label="Text input with checkbox" formControlName="mobsKilled">
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -36,8 +36,8 @@
                                 <input type="checkbox" aria-label="Checkbox for following text input">
                             </div>
                         </div>
-                        <input type="text" class="form-control" placeholder="Trips to the Nether"
-                            aria-label="Text input with checkbox">
+                        <input type="text" class="form-control" placeholder="# Players Killed"
+                            aria-label="Text input with checkbox" formControlName="playersKilled">
                     </div>
                 </div>
                 <div class="checkbox-input">
@@ -47,8 +47,8 @@
                                 <input type="checkbox" aria-label="Checkbox for following text input">
                             </div>
                         </div>
-                        <input type="text" class="form-control" placeholder="Blocks Mined"
-                            aria-label="Text input with checkbox">
+                        <input type="text" class="form-control" placeholder="# Trades"
+                            aria-label="Text input with checkbox" formControlName="trades">
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -56,8 +56,8 @@
                                 <input type="checkbox" aria-label="Checkbox for following text input">
                             </div>
                         </div>
-                        <input type="text" class="form-control" placeholder="Mobs Killed"
-                            aria-label="Text input with checkbox">
+                        <input type="text" class="form-control" placeholder="# Trips to Nether"
+                            aria-label="Text input with checkbox" formControlName="tripsToNether">
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -65,39 +65,32 @@
                                 <input type="checkbox" aria-label="Checkbox for following text input">
                             </div>
                         </div>
-                        <input type="text" class="form-control" placeholder="Trips to the Nether"
-                            aria-label="Text input with checkbox">
+                        <input type="text" class="form-control" placeholder="# Animals Bred"
+                            aria-label="Text input with checkbox" formControlName="animalsBred">
                     </div>
                 </div>
-                <div class="checkbox-input">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text">
-                                <input type="checkbox" aria-label="Checkbox for following text input">
-                            </div>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Blocks Mined"
-                            aria-label="Text input with checkbox">
-                    </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text">
-                                <input type="checkbox" aria-label="Checkbox for following text input">
-                            </div>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Mobs Killed"
-                            aria-label="Text input with checkbox">
-                    </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text">
-                                <input type="checkbox" aria-label="Checkbox for following text input">
-                            </div>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Trips to the Nether"
-                            aria-label="Text input with checkbox">
-                    </div>
+            </div>
+            <div class="checkbox-input break">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" formControlName="enterNether">
+                    <label class="form-check-label" for="defaultCheck1">IntoTheNether</label>
                 </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" formControlName="locateEnd">
+                    <label class="form-check-label" for="defaultCheck1">The End? (Locate the End)</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" formControlName="defeatEnderDragon">
+                    <label class="form-check-label" for="defaultCheck1">The End. (Defeat the Ender Dragon)</label>
+                </div>
+            </div>
+            <div class="form-group2 break">
+                <button type="submit" class="btn btn-outline-success my-2 my-sm-0"
+                onclick="submit()" [disabled]="!tournamentForm.valid">Submit</button>
+            </div>
+        </form>
+        <!-- <form>
+            
                 <div class="checkbox-input break">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck1">
@@ -130,6 +123,6 @@
             <div class="form-group2">
                 <button class="btn btn-outline-success my-2 my-sm-0">Submit</button>
             </div>
-        </form>
+        </form> -->
     </div>
 </div>
