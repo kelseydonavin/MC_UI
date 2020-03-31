@@ -15,22 +15,28 @@ import { HomepageModule } from './homepage/homepage.module';
 import { PlayerPageModule } from './player-page/player-page.module';
 import { ServerPageModule } from './server-page/server-page.module';
 import { MetricsPageModule } from './metrics-page/metrics-page.module';
+import { GraphQLModule } from './graphql.module';
+import { HttpClientModule } from '@angular/common/http';
+import { ExampleUsersComponent } from './example-users/example-users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreatePageComponent,
     CreateLoginPageComponent,
-    HomepageComponent,
     PlayerPageComponent,
     ServerPageComponent,
-    MetricsPageComponent
+    MetricsPageComponent,
+    HomepageComponent,
+    ExampleUsersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    GraphQLModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

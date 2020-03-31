@@ -1,4 +1,3 @@
-
 import { Component, OnInit } from '@angular/core';
 import { Apollo, QueryRef } from 'apollo-angular';
 import gql from 'graphql-tag';
@@ -23,11 +22,11 @@ const USERS_QUERY = gql`
 `;
 
 @Component({
-  selector: 'app-server-page',
-  templateUrl: './server-page.component.html',
-  styleUrls: ['./server-page.component.scss']
+  selector: 'app-example-users',
+  templateUrl: './example-users.component.html',
+  styleUrls: ['./example-users.component.scss']
 })
-export class ServerPageComponent implements OnInit {
+export class ExampleUsersComponent implements OnInit {
 
   players: any[] = []; //If done correctly this will hold database info
 
@@ -47,4 +46,3 @@ export class ServerPageComponent implements OnInit {
   }
 
 }
-
