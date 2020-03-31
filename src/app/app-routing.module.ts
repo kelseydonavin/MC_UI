@@ -7,6 +7,7 @@ import { MetricsPageComponent } from './metrics-page/metrics-page.component';
 import { CreateLoginPageComponent } from './create-login-page/create-login-page.component';
 import { CreatePageComponent} from './create-login-page/create-page/create-page.component';
 import { ExampleUsersComponent } from './example-users/example-users.component';
+import { UniqueMetricPageComponent } from './unique-metric-page/unique-metric-page.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,11 @@ const routes: Routes = [
     // TODO: remove when menu logic is set up
     path: 'metrics',
     component: MetricsPageComponent
+  },
+  {
+    // TODO: remove when menu logic is set up
+    path: 'metrics/:id',
+    component: UniqueMetricPageComponent
   },
   {
     // TODO: remove when menu logic is set up

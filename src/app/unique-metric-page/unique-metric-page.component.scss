@@ -1,0 +1,38 @@
+div.home {
+    margin: 0;
+    padding: 0;
+    background: url(../../assets/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: calc(100vh - 72px);
+}
+
+.metrics-menu {
+    width: 100%;
+    height: 38px;
+    padding: 22px;
+}
+
+div.unique-metric {
+    margin: 0;
+    padding: 0;
+    background: url(../../assets/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+div.unique-metric-table {
+    width: 60%;
+    height: 100vh;
+    margin: auto;
+    padding-top: 50px;
+}
+
+thead, tr {
+    text-align: center;
+}
