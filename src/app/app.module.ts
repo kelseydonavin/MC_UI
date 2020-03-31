@@ -26,7 +26,7 @@ import { ExampleUsersComponent } from './example-users/example-users.component';
     CreateLoginPageComponent,
     PlayerPageComponent,
     ServerPageComponent,
-    MetricsPageComponent
+    MetricsPageComponent,
     HomepageComponent,
     ExampleUsersComponent
   ],
@@ -34,7 +34,7 @@ import { ExampleUsersComponent } from './example-users/example-users.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
     GraphQLModule,
     HttpClientModule
   ],
