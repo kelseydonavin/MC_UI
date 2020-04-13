@@ -10,6 +10,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { PlayerPageComponent } from './player-page/player-page.component';
 import { ServerPageComponent } from './server-page/server-page.component';
 import { MetricsPageComponent } from './metrics-page/metrics-page.component';
+import { UniqueMetricPageComponent } from './unique-metric-page/unique-metric-page.component';
 
 import { HomepageModule } from './homepage/homepage.module';
 import { PlayerPageModule } from './player-page/player-page.module';
@@ -28,7 +29,8 @@ import { ExampleUsersComponent } from './example-users/example-users.component';
     ServerPageComponent,
     MetricsPageComponent,
     HomepageComponent,
-    ExampleUsersComponent
+    ExampleUsersComponent,
+    UniqueMetricPageComponent
   ],
   imports: [
     BrowserModule,
